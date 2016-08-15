@@ -10,5 +10,8 @@ end
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
-  app.name = 'DSReader_rubymotion'
+  app.name = '大圣阅读'
+  app.info_plist['CFBundleURLTypes'] = [
+      {'CFBundleURLName' => 'smart.DSReader'}
+  ]
 end
